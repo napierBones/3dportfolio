@@ -5,7 +5,7 @@
 }
 
 html {
-
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -32,10 +32,9 @@ a {
 }
 
 section {
-  min-height: 100vh;
-
+  height: 100vh;
+  scroll-snap-align: center;
 }
-
 
 @media (min-width: 640px) {
   .container {
@@ -66,4 +65,3 @@ section {
     max-width: 1536px;
   }
 }
-
