@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import './hero.css';
-import Speech from './speech';
+import Speech from './Speech';
+
 import { motion } from 'motion/react';
 import { Canvas } from '@react-three/fiber';
 import Shape from './Shape';
@@ -87,7 +88,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
         {/* bubble */}
-        <Speech />
+        <Speech/>
         {/* certificat */}
         <motion.div animate={{ opacity: [0, 1] }} transition={{ duration: 1 }} className='certificate'>
           <img src='/certificate.png' alt='certificat' />
